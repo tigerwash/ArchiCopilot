@@ -166,4 +166,86 @@ body {
   .feature-image.large-gif img {
     max-width: 100%;
   }
+}
+
+/* === Modal Styles === */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 0.2s;
+}
+.modal-content {
+  background: #181818;
+  margin: 10% auto;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  color: #fff;
+  box-shadow: 0 8px 32px 0 #0005;
+  position: relative;
+  text-align: center;
+}
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close:hover {
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 1.2rem 0.5rem;
+    max-width: 95vw;
+  }
+}
+
+/* === Dropdown Styles === */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #222;
+  min-width: 240px;
+  box-shadow: 0 8px 32px 0 #0003;
+  border-radius: 10px;
+  z-index: 1100;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+.dropdown-content a {
+  color: #fff;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  display: block;
+  font-size: 1.05rem;
+  border-bottom: 1px solid #333;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+.dropdown-content a:hover {
+  background: #fff;
+  color: #111;
+}
+.show {
+  display: block;
 } 

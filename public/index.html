@@ -13,8 +13,15 @@
       <nav class="navbar">
         <div class="title">ArchiCopilot</div>
         <div class="nav-links">
-          <a class="nav-link" href="#contact">Contact</a>
-          <a class="nav-link" href="#demo">Request Demo</a>
+          <div class="dropdown">
+            <button class="nav-link" id="featuresBtn">Features</button>
+            <div class="dropdown-content" id="featuresMenu">
+              <a href="real-time-design-support.html">Real-Time Design Support</a>
+              <a href="automated-compliance-verification.html">Automated Compliance Verification</a>
+              <a href="efficient-documentation.html">Efficient Documentation</a>
+            </div>
+          </div>
+          <button class="nav-link" id="demoBtn">Request Demo</button>
         </div>
       </nav>
     </header>
@@ -22,7 +29,7 @@
       <section class="main-content">
         <div class="main-title">Where Architects<br>and AI Design Together.</div>
         <div class="subtitle">The generative copilot for better buildings</div>
-        <button class="cta-btn">Get Started</button>
+        <button class="cta-btn" id="mainDemoBtn">Request Demo</button>
       </section>
       <!-- Feature 1 -->
       <section class="feature-row">
@@ -57,7 +64,7 @@
           </div>
         </div>
         <div class="feature-image large-gif">
-          <img src="images/tenor_1.gif" alt="Efficient Documentation Demo" />
+          <img src="images/GIF_Apartment_floorplan_generation.gif" alt="Efficient Documentation Demo" />
         </div>
       </section>
       <!-- Feature 4 -->
@@ -69,7 +76,7 @@
           </div>
         </div>
         <div class="feature-image large-gif">
-          <img src="images/image1.jpg" alt="Flexible Deployment Demo" />
+          <img src="images/Finch3D-animation.gif" alt="Flexible Deployment Demo" />
         </div>
       </section>
     </main>
@@ -77,5 +84,45 @@
       &copy; 2024 ArchiCopilot. All rights reserved.
     </footer>
   </div>
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Contact ArchiCopilot</h2>
+      <p>For more details or business inquiries, please email us at</p>
+      <p style="font-weight:bold; color:#007bff;">liaolongtai@gmail.com</p>
+      <p>We look forward to connecting with you!</p>
+    </div>
+  </div>
+  <script>
+    const featuresBtn = document.getElementById('featuresBtn');
+    const featuresMenu = document.getElementById('featuresMenu');
+    const demoBtn = document.getElementById('demoBtn');
+    const mainDemoBtn = document.getElementById('mainDemoBtn');
+    const modal = document.getElementById('contactModal');
+    const closeModal = document.getElementById('closeModal');
+
+    featuresBtn.onclick = function(e) {
+      e.stopPropagation();
+      featuresMenu.classList.toggle('show');
+    }
+    document.onclick = function(event) {
+      if (!featuresMenu.contains(event.target) && event.target !== featuresBtn) {
+        featuresMenu.classList.remove('show');
+      }
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    demoBtn.onclick = function() {
+      modal.style.display = "block";
+    }
+    mainDemoBtn.onclick = function() {
+      modal.style.display = "block";
+    }
+    closeModal.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 </html> 
