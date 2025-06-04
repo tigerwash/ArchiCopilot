@@ -6,13 +6,15 @@
   <title>ArchiCopilot</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="images/logo-draft.jpg">
 </head>
 <body>
   <div class="container">
     <header>
       <nav class="navbar">
-        <div class="title">ArchiCopilot</div>
+        <div class="title"><img src="images/logo-draft.jpg" alt="ArchiCopilot Logo" class="site-logo">ArchiCopilot</div>
         <div class="nav-links">
+          <a class="nav-link-text" href="about.html">about us</a>
           <div class="dropdown">
             <button class="nav-link" id="featuresBtn">Features</button>
             <div class="dropdown-content" id="featuresMenu">
@@ -40,11 +42,11 @@
           </div>
         </div>
         <div class="feature-image large-gif">
-          <img src="images/DMoreno.gif" alt="Design Support Demo" />
+          <img src="images/DMoreno.gif" alt="Real-Time Design Support Demo" class="feature-large-img"/>
         </div>
       </section>
       <!-- Feature 2 (reverse layout) -->
-      <section class="feature-row reverse-row">
+      <section class="feature-row">
         <div class="feature-image large-gif">
           <img src="images/Concept-steps-in-axo.gif" alt="Compliance Verification Demo" />
         </div>
@@ -69,17 +71,25 @@
       </section>
       <!-- Feature 4 -->
       <section class="feature-row">
+        <div class="feature-image large-gif">
+          <img src="images/Finch3D-animation.gif" alt="Flexible Deployment Demo" />
+        </div>
         <div class="feature-text">
           <div class="feature-title">Flexible Deployment</div>
           <div class="feature-desc">
             Offer dual functionality as a standalone tool for next-generation workflows and a premium plugin for integration into established BIM systems, catering to a broad spectrum of architectural practices.
           </div>
         </div>
-        <div class="feature-image large-gif">
-          <img src="images/Finch3D-animation.gif" alt="Flexible Deployment Demo" />
-        </div>
       </section>
     </main>
+    <div class="partner-row">
+      <div class="partner-logos">
+        <img src="images/revit-ft.png" alt="Revit Logo" class="partner-logo" />
+        <img src="images/SketchUp-logo.png" alt="SketchUp Logo" class="partner-logo" />
+        <img src="images/rhinoceros-3d-software-logo2.png" alt="Rhino Logo" class="partner-logo" />
+        <!-- Add more <img> here for more partner logos in the future -->
+      </div>
+    </div>
     <footer style="margin: 4rem 0 2rem 0; color: #666; text-align: center; font-size: 1rem;">
       &copy; 2024 ArchiCopilot. All rights reserved.
     </footer>

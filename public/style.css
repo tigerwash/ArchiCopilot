@@ -51,6 +51,23 @@ body {
   color: #111;
 }
 
+.nav-link-text {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.7em 0.5em;
+  border-radius: 8px;
+  transition: color 0.2s;
+}
+.nav-link-text:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* === Main Hero Section === */
 .main-content {
   display: flex;
@@ -93,7 +110,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin: 10vh 0 10vh 0;
-  gap: 6vw;
+  gap: 2vw;
   max-width: 1200px;
   width: 100%;
   background: none;
@@ -103,7 +120,7 @@ body {
 }
 .feature-text {
   flex: 1 1 0;
-  min-width: 280px;
+  min-width: 220px;
   max-width: 420px;
   padding-right: 2vw;
 }
@@ -115,17 +132,17 @@ body {
   letter-spacing: -0.5px;
 }
 .feature-desc {
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: #ccc;
   line-height: 1.5;
 }
 .feature-image {
-  flex: 1 1 0;
+  flex: 2 1 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   min-width: 220px;
-  max-width: 600px;
+  max-width: none;
 }
 .feature-image img {
   width: 100%;
@@ -248,4 +265,59 @@ body {
 }
 .show {
   display: block;
+}
+
+.feature-large-img {
+  max-width: 780px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 #0002;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .feature-large-img {
+    max-width: 98vw;
+  }
+}
+
+.site-logo {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 0.7em;
+}
+
+.partner-row {
+  width: 100vw;
+  background: #111;
+  padding: 1.2rem 0;
+  overflow-x: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.partner-logos {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 2rem;
+  min-width: 400px;
+  animation: scroll-logos 20s linear infinite;
+}
+.partner-logo {
+  height: 320px;
+  object-fit: contain;
+  filter: invert(1) grayscale(1) brightness(1.2);
+  opacity: 0.85;
+  transition: filter 0.2s, opacity 0.2s;
+}
+.partner-logo:hover {
+  filter: grayscale(0) brightness(1);
+  opacity: 1;
+}
+@keyframes scroll-logos {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 } 
