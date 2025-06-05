@@ -320,4 +320,16 @@ body {
 @keyframes scroll-logos {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
+}
+
+.feature-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: inherit;
+  transition: color 0.2s;
+}
+.feature-link:hover {
+  color: #fff;
+  text-decoration: underline;
 } 
