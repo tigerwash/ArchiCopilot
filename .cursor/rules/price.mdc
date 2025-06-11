@@ -1,0 +1,46 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+This is the doc in my business plan: 
+
+Revenue Projections
+ArchiCopilot's revenue model combines subscription-based and licensing-based income, supplemented by reference fees and custom development services. The projections target two primary market segments: small to medium-sized architectural firms (1–50 employees) and large enterprises (50+ employees), with a total addressable market of 500,000 U.S. architectural professionals.
+A. Subscription Revenue (Standalone Modeling Tool)
+Description: The standalone tool, priced at $50/month for individuals and $500/month for enterprise teams (up to 20 users), targets small to medium-sized firms. A freemium tier drives adoption, converting 20% of users to paid plans.
+Assumptions:
+•	Market Size: 20,000 small to medium-sized firms, with 50,000 potential users.
+•	Adoption Rate: 1% (500 users) by Q1 2027, scaling to 30% (15,000 users) by Q1 2030, based on 15.6% BIM market CAGR.
+•	Churn Rate: 10% annually, mitigated by robust support and updates.
+•	Freemium Conversion: 20% of 1,000 freemium users convert to paid plans by Q1 2027, scaling to 5,000 by Q1 2030.
+•	Pricing: $50/month (individuals), $500/month (enterprises, 10% of users).
+Projections:
+•	2026 (Pre-Launch): $0 (beta testing, no revenue).
+•	2027: 400 individual users ($50/month) + 10 enterprise teams ($500/month) = $240,000 + $60,000 = $300,000.
+•	2028: 1,500 individual users + 50 teams = $900,000 + $300,000 = $1.2 million.
+•	2029: 5,000 individual users + 200 teams = $3 million + $1.2 million = $4.2 million.
+•	2030: 13,500 individual users + 600 teams = $8.1 million + $3.6 million = $11.7 million.
+Total (2027–2030): $17.4 million, with 15,000 users by Q1 2030.
+Impact: Subscription revenue drives accessibility, enabling small firms to adopt AI tools, aligning with economic competitiveness by enhancing productivity.
+B. Licensing Revenue (Premium BIM Plugin)
+Description: The BIM plugin, priced at a $1,000 one-time license and $200/year maintenance fee, targets large firms with robust BIM infrastructure.
+Assumptions:
+•	Market Size: 2,000 large firms, with 50,000 potential users.
+•	Adoption Rate: 0.2% (100 licenses, 2,000 users) by Q1 2027, scaling to 20% (10,000 users) by Q1 2030.
+•	Churn Rate: 5% annually, due to enterprise contracts.
+•	Pricing: $1,000/license + $200/year maintenance (100% of users).
+Projections:
+•	2026: $0 (pre-launch).
+•	2027: 100 licenses ($1,000) + 2,000 users ($200) = $100,000 + $400,000 = $500,000.
+•	2028: 500 licenses + 5,000 users = $500,000 + $1 million = $1.5 million.
+•	2029: 2,000 licenses + 8,000 users = $2 million + $1.6 million = $3.6 million.
+•	2030: 5,000 licenses + 10,000 users = $5 million + $2 million = $7 million.
+Total (2027–2030): $12.6 million, with 10,000 users by Q1 2030.
+Impact: Licensing revenue targets high-value clients, supporting technological innovation by integrating AI into established workflows.
+C. Reference Fees from Design Service Providers
+Description: Reference fees ($5,000–$10,000 per partner) are secured from 3–15 design service providers for promoting ArchiCopilot to their clients.
+Assumptions:
+•	Partnerships: 3 partners in 2026, 5 in 2027, 10 in 2028, 15 by 2030.
+•	Fee Structure: Average $7,500 per partner.
+•	Growth: Driven by market expansion and partner networks.

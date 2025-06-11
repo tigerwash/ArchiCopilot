@@ -68,6 +68,12 @@ body {
   text-decoration: underline;
 }
 
+.nav-link-active {
+  color: #e74c3c;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 /* === Main Hero Section === */
 .main-content {
   display: flex;
@@ -369,66 +375,55 @@ body {
   }
 }
 
-.workflow-section {
-  background: #232c3a;
-  padding: 4rem 0 4rem 0;
-  margin-top: 0;
-  text-align: center;
+/* === Workflow Section (已删除) === */
+
+.invert-logo {
+  filter: invert(1) brightness(2);
 }
-.workflow-title {
-  color: #fff;
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-}
-.workflow-desc {
-  color: #bfc9db;
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto 2.5rem auto;
-}
-.workflow-cards {
+
+/* === Pricing Cards Layout === */
+.pricing-cards-row {
   display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
-.workflow-card {
-  background: #374151;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px 0 #0002;
-  padding: 2.2rem 2rem 2rem 2rem;
-  min-width: 280px;
-  max-width: 340px;
-  flex: 1 1 280px;
-  color: #e5eaf5;
+.pricing-card {
+  background: #181818;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px #0002;
+  padding: 2rem 1.5rem;
+  flex: 1 1 0;
+  max-width: 320px;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
-.workflow-icon {
-  font-size: 2rem;
-  color: #7b8cff;
-  margin-bottom: 1.2rem;
-}
-.workflow-card-title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin-bottom: 0.7rem;
-  color: #fff;
-}
-.workflow-card-desc {
-  font-size: 1.08rem;
-  color: #bfc9db;
-  line-height: 1.6;
+@media (max-width: 1100px) {
+  .pricing-cards-row {
+    flex-wrap: wrap;
+  }
+  .pricing-card {
+    flex: 1 1 320px;
+    max-width: 98vw;
+    min-width: 0;
+    width: 100%;
+    align-items: stretch;
+  }
 }
 @media (max-width: 900px) {
-  .workflow-cards {
+  .pricing-cards-row {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
   }
-  .workflow-section {
-    padding: 2.5rem 0;
+  .pricing-card {
+    max-width: 98vw;
+    min-width: 0;
+    width: 100%;
+    align-items: stretch;
   }
 } 
