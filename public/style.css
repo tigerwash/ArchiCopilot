@@ -426,4 +426,268 @@ body {
     width: 100%;
     align-items: stretch;
   }
+}
+
+/* === Feature Compare Section === */
+.feature-compare-row {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 3rem 0 2rem 0;
+  flex-wrap: nowrap;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.feature-compare-col {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 540px;
+  color: #fff;
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+}
+.feature-compare-col h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #fff;
+}
+.feature-old-list, .feature-edge-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.feature-old-list li, .feature-edge-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.1em;
+}
+.feature-old-list li {
+  color: #ccc;
+  font-size: 1.15rem;
+}
+.feature-edge-list li {
+  color: #b6fcb6;
+  font-size: 1.15rem;
+}
+.feature-old-icon {
+  color: #e74c3c;
+  font-size: 1.3em;
+  margin-right: 1em;
+  margin-top: 0.1em;
+  flex-shrink: 0;
+}
+.feature-edge-icon {
+  color: #4ade80;
+  font-size: 1.3em;
+  margin-right: 1em;
+  margin-top: 0.1em;
+  flex-shrink: 0;
+}
+.feature-old-list b, .feature-edge-list b {
+  font-weight: 700;
+  color: #fff;
+  min-width: 180px;
+  display: inline-block;
+  text-align: left;
+}
+.feature-old-list span, .feature-edge-list span {
+  display: inline-block;
+}
+.feature-compare-row::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  opacity: 0.18;
+  z-index: 1;
+}
+@media (max-width: 1100px) {
+  .feature-compare-row {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+    max-width: 98vw;
+  }
+  .feature-compare-row::before {
+    display: none;
+  }
+  .feature-compare-col {
+    max-width: 100vw;
+    padding: 0 0.5rem;
+  }
+}
+
+/* === Strict Feature Compare Section (参考图风格) === */
+.feature-compare-row-strict {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1100px;
+  margin: 3.5rem auto 0 auto;
+  padding-bottom: 2.5rem;
+}
+.feature-compare-col-strict {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+}
+.feature-compare-col-left {
+  text-align: left;
+}
+.feature-compare-col-right {
+  text-align: left;
+}
+.feature-compare-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.feature-compare-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.feature-compare-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.1em;
+  color: #d1d5db;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.feature-compare-icon {
+  font-size: 1.5em;
+  margin-right: 1.1em;
+  margin-top: 0.1em;
+  flex-shrink: 0;
+}
+.feature-compare-icon-red {
+  color: #e74c3c;
+}
+.feature-compare-icon-green {
+  color: #4ade80;
+}
+.feature-compare-item strong {
+  color: #fff;
+  font-weight: 600;
+  margin-right: 0.2em;
+}
+.feature-compare-divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  opacity: 1;
+  z-index: 1;
+}
+@media (max-width: 1100px) {
+  .feature-compare-row-strict {
+    flex-direction: column;
+    max-width: 98vw;
+    padding-bottom: 0;
+  }
+  .feature-compare-divider {
+    display: none;
+  }
+  .feature-compare-col-strict {
+    max-width: 100vw;
+    padding: 0 0.5rem;
+  }
+}
+
+/* === ArchiCopilot Feature Compare (可复用) === */
+.ac-feature-compare-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1100px;
+  margin: 3.5rem auto 0 auto;
+  padding-bottom: 2.5rem;
+}
+.ac-feature-compare-col {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+.ac-feature-compare-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.ac-feature-compare-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ac-feature-compare-item {
+  display: flex;
+  align-items: flex-start;
+  color: #d1d5db;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+.ac-feature-compare-icon {
+  font-size: 1.5em;
+  margin-right: 1.1em;
+  margin-top: 0.1em;
+  flex-shrink: 0;
+}
+.ac-feature-compare-icon-red {
+  color: #e74c3c;
+}
+.ac-feature-compare-icon-green {
+  color: #4ade80;
+}
+.ac-feature-compare-item strong {
+  color: #fff;
+  font-weight: 600;
+  margin-right: 0.2em;
+}
+.ac-feature-compare-divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  opacity: 1;
+  z-index: 1;
+}
+@media (max-width: 1100px) {
+  .ac-feature-compare-row {
+    flex-direction: column;
+    max-width: 98vw;
+    padding-bottom: 0;
+  }
+  .ac-feature-compare-divider {
+    display: none;
+  }
+  .ac-feature-compare-col {
+    max-width: 100vw;
+    padding: 0 0.5rem;
+  }
 } 
