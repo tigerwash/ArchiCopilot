@@ -302,10 +302,10 @@ body {
 .partner-logos {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 6rem;
   padding: 0 2rem;
-  min-width: 400px;
-  animation: scroll-logos 20s linear infinite;
+  min-width: 1600px;
+  animation: scroll-logos 10.5s linear infinite;
 }
 .partner-logo {
   height: 320px;
@@ -318,9 +318,13 @@ body {
   filter: grayscale(0) brightness(1);
   opacity: 1;
 }
+
+.rhino-logo {
+  height: 160px;
+}
 @keyframes scroll-logos {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .feature-link {
